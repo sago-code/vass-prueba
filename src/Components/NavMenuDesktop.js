@@ -47,7 +47,7 @@ export function NavMenuDesktop() {
                     <button>
                         <label> Regiones {Icons.CaretDownFill()}</label> 
                     </button>
-                    <ul>
+                    <ul style={{display:"none"}}>
                         <Container>
                         <ListGroup>
                             <ListGroupItem>
