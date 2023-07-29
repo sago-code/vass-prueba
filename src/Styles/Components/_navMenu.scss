@@ -1,0 +1,16 @@
+.navMenu_navbar {    
+    height: 78px;
+    background: rgb(153, 153, 153);
+    cursor: pointer;
+
+    ul{
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+    }
+
+    img {
+        margin-top: 26px;
+        margin-left: 27px;
+    }
+}
