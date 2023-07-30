@@ -1,5 +1,6 @@
 import React from "react";
 import logoVass from './../Images/logo-vass-blanco.png';
+import contacto from '../Images/contacto.jpg';
 import 'bootstrap/dist/css/bootstrap.css';
 import * as Icons from './../Complements/Icons';
 import { Container,  ListGroup, ListGroupItem } from "reactstrap";
@@ -7,13 +8,11 @@ import { Container,  ListGroup, ListGroupItem } from "reactstrap";
 export function NavMenuDesktop() {
     return(
         <nav className="navMenu_navbar">
-            <img src={logoVass} alt="logo"/>
+            <img src={logoVass} alt="logo" className="logo"/>
             <ul>
                 <li>
-                    <button>
-                        <label> Industrias {Icons.CaretDownFill()}</label>
-                    </button>
-                    <ul style={{display:"none"}}>
+                    <span> Industrias {Icons.CaretDownFill()}</span>
+                    <ul>
                         <li>
                             <button>ADMINISTRACION PUBLICA</button>
                         </li>
@@ -44,84 +43,121 @@ export function NavMenuDesktop() {
                     </ul>
                 </li>
                 <li>
-                    <button>
-                        <label> Regiones {Icons.CaretDownFill()}</label> 
-                    </button>
-                    <ul style={{display:"none"}}>
+                    <span> Regiones {Icons.CaretDownFill()}</span>
+                    <ul className="ulSemiTrans">
                         <Container>
-                        <ListGroup>
-                            <ListGroupItem>
-                                <ol>
-                                    <label>ESPAÑA</label>
-                                </ol>
-                                <ol>
-                                    <button>España</button>
-                                </ol>
-                            </ListGroupItem>
-                            <ListGroupItem>
-                                <ol>
-                                    <label>AMERICAS</label>
-                                </ol>
-                                <ol>
-                                    <button>EE.UU & Canadá</button>
-                                </ol>
-                                <ol>
-                                    <button>MX & CA</button>
-                                </ol>
-                                <ol>
-                                    <button>América del sur</button>
-                                </ol>
-                            </ListGroupItem>
-                            <ListGroupItem>
-                                <ol>
-                                    <label>EMEA & APAC</label>
-                                </ol>
-                                <ul>
-                                    <li>
-                                        <ol>
-                                            <button>UK & IRL</button>
-                                        </ol>
-                                        <ol>
-                                            <button>DACH</button>
-                                        </ol>
-                                        <ol>
-                                            <button>Países Nórdicos</button>
-                                        </ol>
-                                    </li>
-                                    <li>
-                                        <ol>
-                                            <button>Benelux</button>
-                                        </ol>
-                                        <ol>
-                                            <button>APAC</button>
-                                        </ol>
-                                        <ol>
-                                            <button>Grecia</button>
-                                        </ol>
-                                    </li>
-                                </ul>
-                            </ListGroupItem>
-                        </ListGroup>
+                            <ListGroup>
+                                <ListGroupItem>
+                                    <ol>
+                                        <label>ESPAÑA</label>
+                                    </ol>
+                                    <ol>
+                                        <button>España</button>
+                                    </ol>
+                                </ListGroupItem>
+                                <ListGroupItem className="bordes-l-r">
+                                    <ol>
+                                        <label>AMERICAS</label>
+                                    </ol>
+                                    <ol>
+                                        <button>EE.UU & Canadá</button>
+                                    </ol>
+                                    <ol>
+                                        <button>MX & CA</button>
+                                    </ol>
+                                    <ol>
+                                        <button>América del sur</button>
+                                    </ol>
+                                </ListGroupItem>
+                                <ListGroupItem>
+                                    <ol>
+                                        <label>EMEA & APAC</label>
+                                    </ol>
+                                    <ul>
+                                        <li>
+                                            <ol>
+                                                <button>UK & IRL</button>
+                                            </ol>
+                                            <ol>
+                                                <button>DACH</button>
+                                            </ol>
+                                            <ol>
+                                                <button>Países Nórdicos</button>
+                                            </ol>
+                                        </li>
+                                        <li>
+                                            <ol>
+                                                <button>Benelux</button>
+                                            </ol>
+                                            <ol>
+                                                <button>APAC</button>
+                                            </ol>
+                                            <ol>
+                                                <button>Grecia</button>
+                                            </ol>
+                                        </li>
+                                    </ul>
+                                </ListGroupItem>
+                            </ListGroup>
                         </Container>
                     </ul>
                 </li>
                 <li>
-                    <button>
-                        <label>Somos VASS {Icons.CaretDownFill()}</label>
-                    </button>
+                    <span>Somos VASS {Icons.CaretDownFill()}</span>
+                    <ul>
+                        <li>
+                            <button>Equipo VASS</button>
+                        </li>
+                        <li>
+                            <button>Sobre nosotros</button>
+                        </li>
+                        <li>
+                            <button>RSC</button>
+                        </li>
+                        <li>
+                            <button>VASS en el equipo</button>
+                        </li>
+                    </ul>
                 </li>
                 <li>
-                    <button>
-                        <label>Como lo hacemos {Icons.CaretDownFill()}</label>
-                    </button>
+                    <span>Como lo hacemos {Icons.CaretDownFill()}</span>
+                    <ul>
+                        <li>
+                            <button>
+                                Inpacto
+                                <br/>
+                                ¿QUÉ LOGRAMOS?
+                            </button>
+                        </li>
+                        <li>
+                            <button>
+                                Metodo
+                                <br/>
+                                ¿CÓMO LO LOGRAMOS?
+                            </button>
+                        </li>
+                        <li>
+                            <button>
+                                Tegnologias
+                                <br/>
+                                ¿CON QUÉ LO LOGRAMOS?
+                            </button>
+                        </li>
+                    </ul>
                 </li>
                 <li>
                     <button>Partners</button>
                 </li>
                 <li>
-                    <button>
-                        <label>Insights {Icons.CaretDownFill()}</label>
-                    </button>
+                    <span>Insights {Icons.CaretDownFill()}</span>
+                    <ul>
+                        <li>
+                            <button>Insights</button>
+                        </li>
+                        <li>
+                            <button>Podcasts</button>
+                        </li>
+                    </ul>
                 </li>
                 <li>
                     <button>Noticias</button>
@@ -136,14 +172,41 @@ export function NavMenuDesktop() {
                     <button>
                         <label>Join us! {Icons.CaretDownFill()}</label>
                     </button>
+                    <ul>
+                        <li>
+                            <button>España</button>
+                        </li>
+                        <li>
+                            <button>Perú</button>
+                        </li>
+                        <li>
+                            <button>Chile</button>
+                        </li>
+                        <li>
+                            <button>UK</button>
+                        </li>
+                        <li>
+                            <button>México</button>
+                        </li>
+                        <li>
+                            <button>Colombia</button>
+                        </li>
+                        <li>
+                            <button>Benelux</button>
+                        </li>
+                        <li>
+                            <button>DACH</button>
+                        </li>
+                    </ul>
                 </li>
                 <li>
                     <button>EN</button>
                 </li>
                 <li>
-                    <i className="bi bi-search"></i>
+                    {Icons.Search()}
                 </li>
             </ul>
+            <img src={contacto} alt="contacto" className="contacto"/>
         </nav>
     )
 }
