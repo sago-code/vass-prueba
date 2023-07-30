@@ -6,9 +6,14 @@ import * as Icons from './../Complements/Icons';
 import { Container,  ListGroup, ListGroupItem } from "reactstrap";
 
 export function NavMenuDesktop() {
+
+    const handleRedireccion = () => {
+        window.location.href = '/rocketAir';
+    };
+
     return(
         <nav className="navMenu_navbar">
-            <img src={logoVass} alt="logo" className="logo"/>
+            <img src={logoVass} onClick={handleRedireccion} alt="logo" className="logo"/>
             <ul>
                 <li>
                     <span> Industrias {Icons.CaretDownFill()}</span>
