@@ -168,5 +168,25 @@
     height: 75vh;
     z-index: -2;
     position: relative;
-    top: -73px;
+}
+
+.contactoName {
+    position: absolute;
+    right: 8.8%;
+    top: 60vh;
+}
+
+.contactoName > h3 {
+    font-size: 195px;
+    font-weight: 700;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: .9;
+    letter-spacing: -3px;
+    text-align: right;
+    color: #fff;
+    font-family: 'Titillium Web', sans-serif!important;
+    opacity: .6;
+    font-size: 100px!important;
+    max-width: 100%!important;
 }

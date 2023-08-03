@@ -226,6 +226,25 @@ export function NavMenuDesktop() {
                 </ul>
             </nav>
             <img src={contacto} alt="contacto" className="contacto" />
+            <div className="contactoName">
+                <h3>CONTACTO</h3>
+            </div>
+            <div>
+                <Container>
+                    <ListGroup>
+                        <ListGroupItem>
+                            <ol>
+                                <label>EMPECEMOS A HACERLO SENCILLO</label>
+                            </ol>
+                        </ListGroupItem>
+                        <ListGroupItem>
+                            <ol>
+                                <label>Nos emociona impulsar tu transformación digital</label>
+                            </ol>
+                        </ListGroupItem>
+                    </ListGroup>
+                </Container>
+            </div>
         </div>
     )
 }
